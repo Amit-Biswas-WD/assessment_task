@@ -36,7 +36,7 @@ const DashboardLayout = () => {
           />
         )}
         {/* Main content (scrollable) */}
-        <main className="flex-1 overflow-y-auto lg:p-5 md:p-4 p-3 h-screen w-full bg-gradient-to-br from-[#0D173B] via-[#162456] to-[#131F44]">
+        <main className="mt-[96px] flex-1 overflow-y-auto lg:p-5 md:p-4 p-3 h-screen w-full bg-gradient-to-br from-[#0D173B] via-[#162456] to-[#131F44]">
           <Outlet />
         </main>
       </div>
