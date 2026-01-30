@@ -1,8 +1,13 @@
+import BookingLinkSection from "./components/BookingLinkSection";
+import CardSection from "./components/CardSection";
+import TableSection from "./components/TableSection";
+
 const AppointmentsView = () => {
   return (
-    <div className="space-y-4">
-      <h2 className="text-2xl font-semibold">Appointments</h2>
-      <p className="">Upcoming appointments and scheduling tools.</p>
+    <div className="space-y-6">
+      <CardSection />
+      <BookingLinkSection />
+      <TableSection />
     </div>
   );
 };
