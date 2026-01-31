@@ -121,7 +121,7 @@ const SecondSection = () => {
   };
 
   return (
-    <div className="lg:flex gap-8">
+    <div className="lg:flex xl:gap-8 lg:gap-7 md:gap-6 gap-5">
       {/* Call List Panel */}
       <div className="lg:w-1/2 w-full border-r border-slate-700/50 bg-[#111C3D]">
         <div className="p-6 border-b border-slate-700/50">

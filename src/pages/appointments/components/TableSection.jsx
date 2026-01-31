@@ -72,7 +72,6 @@ const TableSection = () => {
     <>
       <style>{`
         .custom-scrollbar {
-          overflow-x: auto;
           overflow-y: visible;
         }
         
@@ -106,12 +105,9 @@ const TableSection = () => {
       <div className="p-2">
         {/* Table Container */}
         <div className="bg-[#101A3B] rounded-lg border border-blue-800/30 overflow-hidden">
-          {/* Scrollable Table Wrapper with Custom Scrollbar */}
-          <div className="custom-scrollbar">
-            <table
-              className="w-full border-collapse"
-              style={{ minWidth: "1000px" }}
-            >
+          {/* Scrollable Table Wrapper with Custom Scrollbar (only the table scrolls horizontally on small/medium) */}
+          <div className="custom-scrollbar overflow-x-auto">
+            <table className="w-full border-collapse min-w-[1000px] lg:min-w-full">
               {/* Table Header */}
               <thead>
                 <tr className="border-b border-blue-800/50 font-normal text-sm md:text-base">

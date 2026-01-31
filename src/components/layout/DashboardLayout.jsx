@@ -27,7 +27,7 @@ const DashboardLayout = () => {
       {/* Sidebar (fixed for lg, drawer for smaller screens) */}
       <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
       {/* Main content area */}
-      <div className="ml-0 lg:ml-60.25 flex flex-1 flex-col">
+      <div className="ml-0 lg:ml-[241px] flex flex-1 flex-col">
         {/* Top navbar (sticky) - show only on specified routes */}
         {showNavbar && (
           <Navbar

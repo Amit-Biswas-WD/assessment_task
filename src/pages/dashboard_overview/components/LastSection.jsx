@@ -57,13 +57,13 @@ const repairRequests = [
 const LastSection = () => {
   return (
     <div
-      className="mt-10"
+      className="xl:mt-10 lg:mt-8 mt-6"
       //   style={{
       //     background:
       //       "linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0f172a 100%)",
       //   }}
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:gap-8 lg:gap-7 md:gap-6 gap-5">
         {/* Recent Activity Section */}
         <div className="p-8 bg-[#121C3E] rounded-2xl">
           <h2 className="text-white text-xl font-normal mb-6">

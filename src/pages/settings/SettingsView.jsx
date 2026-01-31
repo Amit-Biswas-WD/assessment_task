@@ -7,7 +7,6 @@ const SettingsView = () => {
   const [activeTab, setActiveTab] = useState("profile");
   const [isEditing, setIsEditing] = useState(false);
 
-  // Profile Data
   const [profileData, setProfileData] = useState({
     fullName: "Jane D.",
     email: "jane@gmail.com",
@@ -15,7 +14,6 @@ const SettingsView = () => {
     storeAddress: "123 Main Street, New York",
   });
 
-  // Password Data
   const [passwordData, setPasswordData] = useState({
     currentPassword: "",
     newPassword: "",
@@ -47,7 +45,6 @@ const SettingsView = () => {
 
   const handleUpdatePassword = () => {
     console.log("Updating Password:", passwordData);
-    // Add password validation logic here
     if (passwordData.newPassword === passwordData.confirmPassword) {
       alert("Password updated successfully!");
       setPasswordData({
