@@ -27,7 +27,7 @@ const DashboardLayout = () => {
       {/* Sidebar (fixed for lg, drawer for smaller screens) */}
       <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
       {/* Main content area */}
-      <div className="ml-0 lg:ml-60.25 flex flex-1 flex-col">
+      <div className="ml-0 lg:ml-[241px] flex flex-1 flex-col">
         {/* Top navbar (sticky) - show only on specified routes */}
         {showNavbar && (
           <Navbar
@@ -36,7 +36,7 @@ const DashboardLayout = () => {
           />
         )}
         {/* Main content (scrollable) */}
-        <main className="flex-1 overflow-y-auto lg:p-5 md:p-4 p-3 h-screen w-full bg-gradient-to-br from-[#0D173B] via-[#162456] to-[#131F44]">
+        <main className="mt-[96px] flex-1 overflow-y-auto lg:p-5 md:p-4 p-3 h-screen w-full bg-gradient-to-br from-[#0D173B] via-[#162456] to-[#131F44]">
           <Outlet />
         </main>
       </div>
