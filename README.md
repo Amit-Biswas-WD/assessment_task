@@ -1,16 +1,48 @@
-# React + Vite
+# Assessment Task — React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Quick start
 
-Currently, two official plugins are available:
+1. Install dependencies:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+   npm install
 
-## React Compiler
+2. Run the development server (with HMR):
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+   npm run dev
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 18 + Vite for fast development.
+- Routing and layout with a dashboard-style structure.
+- Reusable UI components: buttons, cards, navbar, sidebar.
+- Pages included: Dashboard Overview, Call Logs, Appointments, Settings.
+
+## Project folder structure (important files)
+
+- `index.html` — app entry HTML used by Vite.
+- `src/` — application source code:
+  - `main.jsx` — React entry point.
+  - `App.jsx` — top-level app component and router mounting.
+  - `index.css` — global styles.
+  - `assets/` — images and static assets.
+  - `components/` — reusable UI components:
+  - `common/` — `Button.jsx`, `Card.jsx`, etc.
+  - `layout/` — `DashboardLayout.jsx`, `Navbar.jsx`, `Sidebar.jsx`.
+  - `pages/` — feature pages organized by route:
+  - `dashboard_overview/` — overview page and subcomponents.
+  - `call_logs/` — call logs view and search section.
+  - `appointments/` — appointments page with booking sections.
+  - `settings/` — settings page with profile & password sections.
+  - `routes/` — `AppRoutes.jsx` contains route definitions.
+
+## Where to find features
+
+- Dashboard and its widgets: `src/pages/dashboard_overview`.
+- Call logs and search: `src/pages/call_logs`.
+- Appointments and booking links: `src/pages/appointments`.
+- Settings (profile & password): `src/pages/settings`.
+
+## Contributing / Next steps
+
+- Run the dev server (`npm run dev`) and open the URL shown by Vite to view the app.
+- Add new components under `src/components` and new routes in `src/routes/AppRoutes.jsx`.
